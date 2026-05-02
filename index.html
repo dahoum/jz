@@ -5,14 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jüchtern & Zeitluft</title>
     <style>
-        .vertical-word
+        div.header
+        {
+            position: relative;
+            height: 35rem;
+        }
+        div.logo
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: flex;
+        }
+        div.vertical
         {
             writing-mode: vertical-lr;
             transform: rotate(180deg);
+            
+            font-size: 3.8rem;
+            line-height: 1;
+            letter-spacing: 0.4rem;
+
+            margin: 0;
+            padding: 0;
+        }
+        div.horizontal
+        {
+            font-size: 3.1rem;
+            line-height: 1;
+            letter-spacing: 0.4rem;
+
+            margin-top: 0.4rem;
+            padding: 0;
+        }
+        div.message
+        {
+            position: absolute;
+            top: 10rem;
+            left: 20%;
+            right: 20%;
+
+            font-size: 5rem;
+        }
+        div.images
+        {
+            display: flex;
+              justify-content: center; /* Centers horizontally */
+  gap: 10px; /* Optional: Adds space between images */
+        }
+        img.photos
+        {
+            width: 450px;
         }
     </style>
 </head>
 <body>
-    <div class="vertical-word">JÜCHTERN</div>
+    <div class="header">
+        <div class="logo">
+            <div class="vertical">JÜCHTERN</div>
+            <div class="horizontal">
+                EISLUFT
+            </div>
+        </div>
+        <div class="message">
+            In time of AI human connection counts more.
+        </div>
+    </div>
+    <div class="images">
+        <img class="photos" src="j.png">
+        <img class="photos" src="z.png">
+    </div>
 </body>
 </html>
